@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login & reg</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="allContent" id="allContent">
+       
+        <div class="formContent sign-up-content">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-content">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <div class="inform-user">
+                    <input id="signUpName" type="text" placeholder="Name" />
+                    <label></label>
+                    <div id="alertName" class="alert alert-danger d-none text-center">your Name is invalid or the box is empty</div>
+                </div>
+                <div class="inform-user">
+                    <div id="emailExist" class="emailExist text-center mt-1 d-none"><h6>email is exisr</h6></div>
+                    <input id="signUpEmail" type="text" placeholder="Email" name="email"/>
+                    <label></label>                  
+                    <div id="alertEmail" class="alert alert-danger d-none text-center">your Email is invalid or the box is empty</div>
+
+                </div>
+                <div class="inform-user">
+                    <input id="signUpPassword" type="password" placeholder="Password" />
+                    <label></label>
+                    <div id="passwordExist" class="passwordExist text-center mt-1 d-none"><h6>password is exist</h6></div>
+                    <div id="alertPassword" class="alert alert-danger d-none text-center">your Password is invalid or the box is empty</div>
+                </div>
+                <button type="button" id="signup">Sign Up</button>
+            </form>
+        </div>
+        <div class="formContent sign-in-Content">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-content">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <div class="inform-user">
+                    <input id="signInUserEmail" type="email" placeholder="Email" name="email"/>
+                    <label></label>
+                </div>
+                <div class="inform-user">
+                    <input id="signInUserPassword" type="password" placeholder="Password" />
+                    <label></label>
+                </div>
+                <a href="#" class="forgot">Forgot your password?</a>
+                <button type="button" id="signin">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-content" id="overlayCon">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="mb-5">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button>Sign Up</button>
+                </div>
+            </div>
+            <button id="overlayBtn"></button>
+        </div>
+    
+    </div>
+    
+
+    <footer>
+        <mark>See more on <a href="https://www.youtube.com/channel/UCHIkJZkap10qGFHq5ViIExg">Karacode</a></mark>
+    </footer>
+
+   
+    <script src="main.js"></script>
+</body>
+</html>
